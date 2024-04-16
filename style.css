@@ -1,0 +1,43 @@
+.exif-img-container {
+    position: relative;
+    margin: 0 auto; /* Center it */
+  }
+ 
+.phtags {
+    position: absolute; /* Position the background text */
+    bottom: 6px; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    /*width: 100%; /* Full width */
+    padding: 10px; /* Some padding */
+
+    font-weight: 300;
+
+    transition: .5s ease;
+    opacity:0;
+}
+
+.exif-img-container:hover .phtags {
+    opacity: 1;
+}
+
+.exif-img-container:active .phtags {
+    opacity: 1;
+}
+
+.phtag {
+    float: left;
+}
+
+.phtag img{
+    margin-left: 10px;
+    margin-right: 5px;
+    max-width: 16px;
+    max-height: 16px;
+    vertical-align: middle;
+}
+
+.phtag span{
+    vertical-align: middle;
+}
